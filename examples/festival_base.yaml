@@ -1,0 +1,229 @@
+project:
+  name: "Oregon Country Fair 2025 - The Final Cut"
+  owner: "Fair Operations"
+  start_date: "2025-07-08"
+  end_date: "2025-07-14"
+  timezone: "America/Los_Angeles"
+
+roles:
+  - {id: "arrivals_greeter", name: "Arrivals Greeter"}
+  - {id: "eagle_eye", name: "Eagle Eye"}
+  - {id: "camp_taxi", name: "Camp Taxi"}
+  - {id: "camp_rover", name: "Camp Rover"}
+  - {id: "id_keeper", name: "ID Keeper"}
+
+shifts:
+  - {id: "shift_tue_09", name: "Tue 9am", start_datetime: "2025-07-08T09:00:00", end_datetime: "2025-07-08T13:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_tue_13", name: "Tue 1pm", start_datetime: "2025-07-08T13:00:00", end_datetime: "2025-07-08T17:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_tue_17", name: "Tue 5pm", start_datetime: "2025-07-08T17:00:00", end_datetime: "2025-07-08T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_tue_21", name: "Tue 9pm", start_datetime: "2025-07-08T21:00:00", end_datetime: "2025-07-09T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_01", name: "Wed 1am", start_datetime: "2025-07-09T01:00:00", end_datetime: "2025-07-09T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_05", name: "Wed 5am", start_datetime: "2025-07-09T05:00:00", end_datetime: "2025-07-09T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_09", name: "Wed 9am", start_datetime: "2025-07-09T09:00:00", end_datetime: "2025-07-09T13:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_13", name: "Wed 1pm", start_datetime: "2025-07-09T13:00:00", end_datetime: "2025-07-09T17:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_17", name: "Wed 5pm", start_datetime: "2025-07-09T17:00:00", end_datetime: "2025-07-09T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_21", name: "Wed 9pm", start_datetime: "2025-07-09T21:00:00", end_datetime: "2025-07-10T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_01", name: "Thu 1am", start_datetime: "2025-07-10T01:00:00", end_datetime: "2025-07-10T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_05", name: "Thu 5am", start_datetime: "2025-07-10T05:00:00", end_datetime: "2025-07-10T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_09", name: "Thu 9am", start_datetime: "2025-07-10T09:00:00", end_datetime: "2025-07-10T13:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_13", name: "Thu 1pm", start_datetime: "2025-07-10T13:00:00", end_datetime: "2025-07-10T17:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_17", name: "Thu 5pm", start_datetime: "2025-07-10T17:00:00", end_datetime: "2025-07-10T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_21", name: "Thu 9pm", start_datetime: "2025-07-10T21:00:00", end_datetime: "2025-07-11T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_01", name: "Fri 1am", start_datetime: "2025-07-11T01:00:00", end_datetime: "2025-07-11T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_05", name: "Fri 5am", start_datetime: "2025-07-11T05:00:00", end_datetime: "2025-07-11T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_09", name: "Fri 9am", start_datetime: "2025-07-11T09:00:00", end_datetime: "2025-07-11T13:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_13", name: "Fri 1pm", start_datetime: "2025-07-11T13:00:00", end_datetime: "2025-07-11T17:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_17", name: "Fri 5pm", start_datetime: "2025-07-11T17:00:00", end_datetime: "2025-07-11T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_21", name: "Fri 9pm", start_datetime: "2025-07-11T21:00:00", end_datetime: "2025-07-12T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_01", name: "Sat 1am", start_datetime: "2025-07-12T01:00:00", end_datetime: "2025-07-12T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_05", name: "Sat 5am", start_datetime: "2025-07-12T05:00:00", end_datetime: "2025-07-12T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_09", name: "Sat 9am", start_datetime: "2025-07-12T09:00:00", end_datetime: "2025-07-12T13:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_13", name: "Sat 1pm", start_datetime: "2025-07-12T13:00:00", end_datetime: "2025-07-12T17:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_17", name: "Sat 5pm", start_datetime: "2025-07-12T17:00:00", end_datetime: "2025-07-12T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_21", name: "Sat 9pm", start_datetime: "2025-07-12T21:00:00", end_datetime: "2025-07-13T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_01", name: "Sun 1am", start_datetime: "2025-07-13T01:00:00", end_datetime: "2025-07-13T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_05", name: "Sun 5am", start_datetime: "2025-07-13T05:00:00", end_datetime: "2025-07-13T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_09", name: "Sun 9am", start_datetime: "2025-07-13T09:00:00", end_datetime: "2025-07-13T13:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_13", name: "Sun 1pm", start_datetime: "2025-07-13T13:00:00", end_datetime: "2025-07-13T17:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_17", name: "Sun 5pm", start_datetime: "2025-07-13T17:00:00", end_datetime: "2025-07-13T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_21", name: "Sun 9pm", start_datetime: "2025-07-13T21:00:00", end_datetime: "2025-07-14T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_mon_01", name: "Mon 1am", start_datetime: "2025-07-14T01:00:00", end_datetime: "2025-07-14T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_mon_05", name: "Mon 5am", start_datetime: "2025-07-14T05:00:00", end_datetime: "2025-07-14T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_mon_09", name: "Mon 9am", start_datetime: "2025-07-14T09:00:00", end_datetime: "2025-07-14T13:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 0, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+
+volunteers:
+  - {id: "vol_01", name: "Sky", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_02", name: "Meadow", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_03", name: "Orion", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_04", name: "Rain", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_05", name: "Sage", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_06", name: "Ash", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_07", name: "Robin", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_08", name: "Finn", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_09", name: "Leaf", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_10", name: "Wren", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_11", name: "Rowan", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_12", name: "Brooks", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_13", name: "Cedar", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_14", name: "Dawn", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_15", name: "Echo", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_16", name: "Fern", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_17", name: "Grove", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_18", name: "Hawk", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_19", name: "Jasper", role_experience: {arrivals_greeter: 2, eagle_eye: 0, camp_taxi: 0, camp_rover: 3, id_keeper: 0}}
+  - {id: "vol_20", name: "Kai", role_experience: {arrivals_greeter: 0, eagle_eye: 2, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "vol_21", name: "Lily", role_experience: {arrivals_greeter: 3, eagle_eye: 0, camp_taxi: 1, camp_rover: 0, id_keeper: 2}}
+  - {id: "vol_22", name: "Milo", role_experience: {arrivals_greeter: 0, eagle_eye: 3, camp_taxi: 2, camp_rover: 1, id_keeper: 0}}
+  - {id: "vol_23", name: "Nova", role_experience: {arrivals_greeter: 1, eagle_eye: 0, camp_taxi: 3, camp_rover: 0, id_keeper: 2}}
+  - {id: "vol_24", name: "Opal", role_experience: {arrivals_greeter: 0, eagle_eye: 1, camp_taxi: 0, camp_rover: 3, id_keeper: 2}}
+  - {id: "vol_25", name: "Pax", role_experience: {arrivals_greeter: 2, eagle_eye: 0, camp_taxi: 2, camp_rover: 1, id_keeper: 0}}
+  - {id: "vol_26", name: "Quinn", role_experience: {arrivals_greeter: 0, eagle_eye: 2, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "vol_27", name: "Reed", role_experience: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 1, camp_rover: 1, id_keeper: 1}}
+  - {id: "vol_28", name: "Silas", role_experience: {arrivals_greeter: 5, eagle_eye: 4, camp_taxi: 6, camp_rover: 5, id_keeper: 7}}
+  - {id: "vol_29", name: "Theo", role_experience: {arrivals_greeter: 4, eagle_eye: 5, camp_taxi: 5, camp_rover: 6, id_keeper: 4}}
+  - {id: "vol_30", name: "Uma", role_experience: {arrivals_greeter: 6, eagle_eye: 6, camp_taxi: 4, camp_rover: 7, id_keeper: 5}}
+  - {id: "vol_31", name: "Vera", role_experience: {arrivals_greeter: 7, eagle_eye: 4, camp_taxi: 5, camp_rover: 4, id_keeper: 6}}
+  - {id: "vol_32", name: "Wyatt", role_experience: {arrivals_greeter: 4, eagle_eye: 7, camp_taxi: 6, camp_rover: 5, id_keeper: 5}}
+  - {id: "vol_33", name: "Xena", role_experience: {arrivals_greeter: 5, eagle_eye: 5, camp_taxi: 4, camp_rover: 6, id_keeper: 4}}
+  - {id: "vol_34", name: "Yara", role_experience: {arrivals_greeter: 6, eagle_eye: 4, camp_taxi: 7, camp_rover: 5, id_keeper: 6}}
+  - {id: "vol_35", name: "Zane", role_experience: {arrivals_greeter: 4, eagle_eye: 6, camp_taxi: 5, camp_rover: 4, id_keeper: 7}}
+
+constraints:
+  - type: "aggregate_hours"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {min_hours: 12, max_hours: 24}
+
+  - type: "rolling_window"
+    enforcement: "MUST_NOT"
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {max_hours_worked: 8, window_size_hours: 16}
+
+  - type: "minimum_rest"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {min_rest_hours: 12}
+
+  - type: "shift_composition"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["ANY"]}
+    condition:
+      target_shift_id: "ANY"
+      filter_attribute: "role_experience.camp_rover"
+      filter_operator: "GREATER_THAN_OR_EQUAL"
+      filter_value: 4
+      min_count: 1
+      max_count: 99
+
+  - type: "shift_composition"
+    enforcement: "PREFER_NOT"
+    weight: 10
+    subject: {volunteer_ids: ["ANY"]}
+    condition:
+      target_shift_id: "ANY"
+      filter_attribute: "role_experience.camp_rover"
+      filter_operator: "LESS_THAN"
+      filter_value: 1
+      min_count: 4   
+      max_count: 99
+
+  - type: "attribute"
+    enforcement: "MUST_NOT"
+    subject:
+      filter_attribute: "role_experience.id_keeper"
+      filter_operator: "LESS_THAN"
+      filter_value: 1
+    condition: {target_role_id: "id_keeper", target_shift_id: "ANY"}
+
+  - type: "attribute"
+    enforcement: "MUST_NOT"
+    subject:
+      filter_attribute: "role_experience.camp_taxi"
+      filter_operator: "LESS_THAN"
+      filter_value: 2
+    condition: {target_role_id: "camp_taxi", target_shift_id: "ANY"}
+
+  - type: "attribute"
+    enforcement: "PREFER"
+    weight: 15
+    subject:
+      filter_attribute: "role_experience.eagle_eye"
+      filter_operator: "GREATER_THAN_OR_EQUAL"
+      filter_value: 4
+    condition: {target_role_id: "eagle_eye", target_shift_id: "ANY"}
+
+  - type: "pairing"
+    enforcement: "MUST_NOT"
+    subject: {volunteer_ids: ["vol_01", "vol_02"]}
+    condition: {match_target: "shift"}
+
+  - type: "pairing"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["vol_34", "vol_35"]}
+    condition: {match_target: "shift"}
+
+  - type: "pairing"
+    enforcement: "PREFER"
+    weight: 20
+    subject: {volunteer_ids: ["vol_03", "vol_04", "vol_05", "vol_06"]}
+    condition: {match_target: "shift"}
+
+  - type: "pairing"
+    enforcement: "PREFER_NOT"
+    weight: 15
+    subject: {volunteer_ids: ["vol_28", "vol_29"]}
+    condition: {match_target: "shift"}
+
+  - type: "availability"
+    enforcement: "MUST_NOT"
+    subject: {volunteer_ids: ["vol_10", "vol_11"]}
+    condition: {start_datetime: "2025-07-08T00:00:00", end_datetime: "2025-07-10T00:00:00"}
+
+  - type: "availability"
+    enforcement: "PREFER"
+    weight: 5
+    subject: {volunteer_ids: ["vol_12"]}
+    condition: {start_datetime: "2025-07-10T21:00:00", end_datetime: "2025-07-11T05:00:00"} 
+
+  - type: "availability"
+    enforcement: "PREFER_NOT"
+    weight: 10
+    subject: {volunteer_ids: ["vol_30"]}
+    condition: {start_datetime: "2025-07-10T01:00:00", end_datetime: "2025-07-10T09:00:00"} 
+
+  - type: "assignment"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["vol_31"]}
+    condition: {target_shift_id: "shift_sat_21", target_role_id: "id_keeper"}
+
+  - type: "assignment"
+    enforcement: "MUST_NOT"
+    subject: {volunteer_ids: ["vol_18"]}
+    condition: {target_shift_id: "ANY", target_role_id: "camp_rover"}
+
+  - type: "assignment"
+    enforcement: "PREFER"
+    weight: 8
+    subject: {volunteer_ids: ["vol_20"]}
+    condition: {target_shift_id: "shift_thu_13", target_role_id: "camp_taxi"}
+
+  - type: "aggregate_hours"
+    enforcement: "PREFER"
+    weight: 10
+    subject: {volunteer_ids: ["vol_19", "vol_20", "vol_21", "vol_22", "vol_23", "vol_24", "vol_25", "vol_26", "vol_27"]}
+    condition: {min_hours: 16, max_hours: 16}
+
+  - type: "aggregate_hours"
+    enforcement: "PREFER_NOT"
+    weight: 5
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {min_hours: 12, max_hours: 12}
+
+  # --- 21. THE NEW SPAN CONSTRAINT ---
+  - type: "shift_span"
+    description: "Squeeze everyone's shifts into a 3-day footprint"
+    enforcement: "PREFER_NOT"
+    weight: 1
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {max_span_hours: 72}
+
