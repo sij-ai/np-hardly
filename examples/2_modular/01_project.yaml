@@ -1,0 +1,7 @@
+project:
+  name: "Oregon Country Fair 2025 - Modular Example"
+  owner: "Fair Operations"
+  start_date: "2025-07-08"
+  end_date: "2025-07-14"
+  timezone: "America/Los_Angeles"
+

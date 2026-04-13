@@ -1,0 +1,37 @@
+volunteers:
+  - {id: "vol_01", name: "Sky", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_02", name: "Meadow", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_03", name: "Orion", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_04", name: "Rain", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_05", name: "Sage", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_06", name: "Ash", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_07", name: "Robin", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_08", name: "Finn", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_09", name: "Leaf", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_10", name: "Wren", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_11", name: "Rowan", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_12", name: "Brooks", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_13", name: "Cedar", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_14", name: "Dawn", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_15", name: "Echo", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_16", name: "Fern", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_17", name: "Grove", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_18", name: "Hawk", role_experience: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 0, id_keeper: 0}}
+  - {id: "vol_19", name: "Jasper", role_experience: {arrivals_greeter: 2, eagle_eye: 0, camp_taxi: 0, camp_rover: 3, id_keeper: 0}}
+  - {id: "vol_20", name: "Kai", role_experience: {arrivals_greeter: 0, eagle_eye: 2, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "vol_21", name: "Lily", role_experience: {arrivals_greeter: 3, eagle_eye: 0, camp_taxi: 1, camp_rover: 0, id_keeper: 2}}
+  - {id: "vol_22", name: "Milo", role_experience: {arrivals_greeter: 0, eagle_eye: 3, camp_taxi: 2, camp_rover: 1, id_keeper: 0}}
+  - {id: "vol_23", name: "Nova", role_experience: {arrivals_greeter: 1, eagle_eye: 0, camp_taxi: 3, camp_rover: 0, id_keeper: 2}}
+  - {id: "vol_24", name: "Opal", role_experience: {arrivals_greeter: 0, eagle_eye: 1, camp_taxi: 0, camp_rover: 3, id_keeper: 2}}
+  - {id: "vol_25", name: "Pax", role_experience: {arrivals_greeter: 2, eagle_eye: 0, camp_taxi: 2, camp_rover: 1, id_keeper: 0}}
+  - {id: "vol_26", name: "Quinn", role_experience: {arrivals_greeter: 0, eagle_eye: 2, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "vol_27", name: "Reed", role_experience: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 1, camp_rover: 1, id_keeper: 1}}
+  - {id: "vol_28", name: "Silas", role_experience: {arrivals_greeter: 5, eagle_eye: 4, camp_taxi: 6, camp_rover: 5, id_keeper: 7}}
+  - {id: "vol_29", name: "Theo", role_experience: {arrivals_greeter: 4, eagle_eye: 5, camp_taxi: 5, camp_rover: 6, id_keeper: 4}}
+  - {id: "vol_30", name: "Uma", role_experience: {arrivals_greeter: 6, eagle_eye: 6, camp_taxi: 4, camp_rover: 7, id_keeper: 5}}
+  - {id: "vol_31", name: "Vera", role_experience: {arrivals_greeter: 7, eagle_eye: 4, camp_taxi: 5, camp_rover: 4, id_keeper: 6}}
+  - {id: "vol_32", name: "Wyatt", role_experience: {arrivals_greeter: 4, eagle_eye: 7, camp_taxi: 6, camp_rover: 5, id_keeper: 5}}
+  - {id: "vol_33", name: "Xena", role_experience: {arrivals_greeter: 5, eagle_eye: 5, camp_taxi: 4, camp_rover: 6, id_keeper: 4}}
+  - {id: "vol_34", name: "Yara", role_experience: {arrivals_greeter: 6, eagle_eye: 4, camp_taxi: 7, camp_rover: 5, id_keeper: 6}}
+  - {id: "vol_35", name: "Zane", role_experience: {arrivals_greeter: 4, eagle_eye: 6, camp_taxi: 5, camp_rover: 4, id_keeper: 7}}
+

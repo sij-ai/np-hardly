@@ -1,0 +1,59 @@
+roles:
+  - {id: "arrivals_greeter", name: "Arrivals Greeter"}
+  - {id: "eagle_eye", name: "Eagle Eye"}
+  - {id: "camp_taxi", name: "Camp Taxi"}
+  - {id: "camp_rover", name: "Camp Rover"}
+  - {id: "id_keeper", name: "ID Keeper"}
+
+shifts:
+  # Tuesday
+  - {id: "shift_tue_09", name: "Tue 9am", start_datetime: "2025-07-08T09:00:00", end_datetime: "2025-07-08T13:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_tue_13", name: "Tue 1pm", start_datetime: "2025-07-08T13:00:00", end_datetime: "2025-07-08T17:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_tue_17", name: "Tue 5pm", start_datetime: "2025-07-08T17:00:00", end_datetime: "2025-07-08T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_tue_21", name: "Tue 9pm", start_datetime: "2025-07-08T21:00:00", end_datetime: "2025-07-09T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  
+  # Wednesday
+  - {id: "shift_wed_01", name: "Wed 1am", start_datetime: "2025-07-09T01:00:00", end_datetime: "2025-07-09T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_05", name: "Wed 5am", start_datetime: "2025-07-09T05:00:00", end_datetime: "2025-07-09T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_09", name: "Wed 9am", start_datetime: "2025-07-09T09:00:00", end_datetime: "2025-07-09T13:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_13", name: "Wed 1pm", start_datetime: "2025-07-09T13:00:00", end_datetime: "2025-07-09T17:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_17", name: "Wed 5pm", start_datetime: "2025-07-09T17:00:00", end_datetime: "2025-07-09T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_wed_21", name: "Wed 9pm", start_datetime: "2025-07-09T21:00:00", end_datetime: "2025-07-10T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  
+  # Thursday
+  - {id: "shift_thu_01", name: "Thu 1am", start_datetime: "2025-07-10T01:00:00", end_datetime: "2025-07-10T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_05", name: "Thu 5am", start_datetime: "2025-07-10T05:00:00", end_datetime: "2025-07-10T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_09", name: "Thu 9am", start_datetime: "2025-07-10T09:00:00", end_datetime: "2025-07-10T13:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_13", name: "Thu 1pm", start_datetime: "2025-07-10T13:00:00", end_datetime: "2025-07-10T17:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_17", name: "Thu 5pm", start_datetime: "2025-07-10T17:00:00", end_datetime: "2025-07-10T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_thu_21", name: "Thu 9pm", start_datetime: "2025-07-10T21:00:00", end_datetime: "2025-07-11T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  
+  # Friday
+  - {id: "shift_fri_01", name: "Fri 1am", start_datetime: "2025-07-11T01:00:00", end_datetime: "2025-07-11T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_05", name: "Fri 5am", start_datetime: "2025-07-11T05:00:00", end_datetime: "2025-07-11T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_09", name: "Fri 9am", start_datetime: "2025-07-11T09:00:00", end_datetime: "2025-07-11T13:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_13", name: "Fri 1pm", start_datetime: "2025-07-11T13:00:00", end_datetime: "2025-07-11T17:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_17", name: "Fri 5pm", start_datetime: "2025-07-11T17:00:00", end_datetime: "2025-07-11T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_fri_21", name: "Fri 9pm", start_datetime: "2025-07-11T21:00:00", end_datetime: "2025-07-12T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  
+  # Saturday
+  - {id: "shift_sat_01", name: "Sat 1am", start_datetime: "2025-07-12T01:00:00", end_datetime: "2025-07-12T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_05", name: "Sat 5am", start_datetime: "2025-07-12T05:00:00", end_datetime: "2025-07-12T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_09", name: "Sat 9am", start_datetime: "2025-07-12T09:00:00", end_datetime: "2025-07-12T13:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_13", name: "Sat 1pm", start_datetime: "2025-07-12T13:00:00", end_datetime: "2025-07-12T17:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_17", name: "Sat 5pm", start_datetime: "2025-07-12T17:00:00", end_datetime: "2025-07-12T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sat_21", name: "Sat 9pm", start_datetime: "2025-07-12T21:00:00", end_datetime: "2025-07-13T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  
+  # Sunday
+  - {id: "shift_sun_01", name: "Sun 1am", start_datetime: "2025-07-13T01:00:00", end_datetime: "2025-07-13T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_05", name: "Sun 5am", start_datetime: "2025-07-13T05:00:00", end_datetime: "2025-07-13T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_09", name: "Sun 9am", start_datetime: "2025-07-13T09:00:00", end_datetime: "2025-07-13T13:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_13", name: "Sun 1pm", start_datetime: "2025-07-13T13:00:00", end_datetime: "2025-07-13T17:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_17", name: "Sun 5pm", start_datetime: "2025-07-13T17:00:00", end_datetime: "2025-07-13T21:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 1, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_sun_21", name: "Sun 9pm", start_datetime: "2025-07-13T21:00:00", end_datetime: "2025-07-14T01:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  
+  # Monday
+  - {id: "shift_mon_01", name: "Mon 1am", start_datetime: "2025-07-14T01:00:00", end_datetime: "2025-07-14T05:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_mon_05", name: "Mon 5am", start_datetime: "2025-07-14T05:00:00", end_datetime: "2025-07-14T09:00:00", requirements: {arrivals_greeter: 0, eagle_eye: 0, camp_taxi: 0, camp_rover: 2, id_keeper: 1}}
+  - {id: "shift_mon_09", name: "Mon 9am", start_datetime: "2025-07-14T09:00:00", end_datetime: "2025-07-14T13:00:00", requirements: {arrivals_greeter: 1, eagle_eye: 0, camp_taxi: 2, camp_rover: 2, id_keeper: 1}}
+

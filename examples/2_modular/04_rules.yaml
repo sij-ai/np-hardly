@@ -1,0 +1,158 @@
+constraints:
+  - type: "aggregate_hours"
+    description: "HARD: Every volunteer must work between 12 and 24 hours"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {min_hours: 12, max_hours: 24}
+
+  - type: "rolling_window"
+    description: "HARD: Max 8 hours within any 16-hour window"
+    enforcement: "MUST_NOT"
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {max_hours_worked: 8, window_size_hours: 16}
+
+  - type: "minimum_rest"
+    description: "HARD: If you get a break, it MUST be at least 12 hours"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {min_rest_hours: 12}
+
+  - type: "shift_composition"
+    description: "HARD: Every shift MUST have at least 1 Veteran (Rover exp >= 4)"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["ANY"]}
+    condition:
+      target_shift_id: "ANY"
+      filter_attribute: "role_experience.camp_rover"
+      filter_operator: "GREATER_THAN_OR_EQUAL"
+      filter_value: 4
+      min_count: 1
+      max_count: 99
+
+  - type: "shift_composition"
+    description: "SOFT: Prefer NOT to have more than 3 Newbies per shift"
+    enforcement: "PREFER_NOT"
+    weight: 10
+    subject: {volunteer_ids: ["ANY"]}
+    condition:
+      target_shift_id: "ANY"
+      filter_attribute: "role_experience.camp_rover"
+      filter_operator: "LESS_THAN"
+      filter_value: 1
+      min_count: 4   
+      max_count: 99
+
+  - type: "attribute"
+    description: "HARD: ID Keepers need >= 1 exp"
+    enforcement: "MUST_NOT"
+    subject:
+      filter_attribute: "role_experience.id_keeper"
+      filter_operator: "LESS_THAN"
+      filter_value: 1
+    condition: {target_role_id: "id_keeper", target_shift_id: "ANY"}
+
+  - type: "attribute"
+    description: "HARD: Camp Taxi drivers need >= 2 exp"
+    enforcement: "MUST_NOT"
+    subject:
+      filter_attribute: "role_experience.camp_taxi"
+      filter_operator: "LESS_THAN"
+      filter_value: 2
+    condition: {target_role_id: "camp_taxi", target_shift_id: "ANY"}
+
+  - type: "attribute"
+    description: "SOFT: Prefer Eagle Eyes to have >= 4 exp"
+    enforcement: "PREFER"
+    weight: 15
+    subject:
+      filter_attribute: "role_experience.eagle_eye"
+      filter_operator: "GREATER_THAN_OR_EQUAL"
+      filter_value: 4
+    condition: {target_role_id: "eagle_eye", target_shift_id: "ANY"}
+
+  - type: "pairing"
+    description: "HARD: Sky and Meadow broke up, MUST NOT work together"
+    enforcement: "MUST_NOT"
+    subject: {volunteer_ids: ["vol_01", "vol_02"]}
+    condition: {match_target: "shift"}
+
+  - type: "pairing"
+    description: "HARD: Yara and Zane are married with 1 car, MUST work together"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["vol_34", "vol_35"]}
+    condition: {match_target: "shift"}
+
+  - type: "pairing"
+    description: "SOFT: Four newbies want to work together"
+    enforcement: "PREFER"
+    weight: 20
+    subject: {volunteer_ids: ["vol_03", "vol_04", "vol_05", "vol_06"]}
+    condition: {match_target: "shift"}
+
+  - type: "pairing"
+    description: "SOFT: Keep Silas and Theo apart"
+    enforcement: "PREFER_NOT"
+    weight: 15
+    subject: {volunteer_ids: ["vol_28", "vol_29"]}
+    condition: {match_target: "shift"}
+
+  - type: "availability"
+    description: "HARD: Wren and Rowan arrive late (Block Tue & Wed)"
+    enforcement: "MUST_NOT"
+    subject: {volunteer_ids: ["vol_10", "vol_11"]}
+    condition: {start_datetime: "2025-07-08T00:00:00", end_datetime: "2025-07-10T00:00:00"}
+
+  - type: "availability"
+    description: "SOFT: Brooks prefers night shifts"
+    enforcement: "PREFER"
+    weight: 5
+    subject: {volunteer_ids: ["vol_12"]}
+    condition: {start_datetime: "2025-07-10T21:00:00", end_datetime: "2025-07-11T05:00:00"} 
+
+  - type: "availability"
+    description: "SOFT: Uma prefers NOT to work graveyard"
+    enforcement: "PREFER_NOT"
+    weight: 10
+    subject: {volunteer_ids: ["vol_30"]}
+    condition: {start_datetime: "2025-07-10T01:00:00", end_datetime: "2025-07-10T09:00:00"} 
+
+  - type: "assignment"
+    description: "HARD: Vera MUST be ID Keeper on Sat 9pm"
+    enforcement: "MUST"
+    subject: {volunteer_ids: ["vol_31"]}
+    condition: {target_shift_id: "shift_sat_21", target_role_id: "id_keeper"}
+
+  - type: "assignment"
+    description: "HARD: Hawk MUST NOT be Camp Rover (bad knees)"
+    enforcement: "MUST_NOT"
+    subject: {volunteer_ids: ["vol_18"]}
+    condition: {target_shift_id: "ANY", target_role_id: "camp_rover"}
+
+  - type: "assignment"
+    description: "SOFT: Kai wants to drive Camp Taxi on Thu 1pm"
+    enforcement: "PREFER"
+    weight: 8
+    subject: {volunteer_ids: ["vol_20"]}
+    condition: {target_shift_id: "shift_thu_13", target_role_id: "camp_taxi"}
+
+  - type: "aggregate_hours"
+    description: "SOFT: Try to get Intermediates exactly 16 hours"
+    enforcement: "PREFER"
+    weight: 10
+    subject: {volunteer_ids: ["vol_19", "vol_20", "vol_21", "vol_22", "vol_23", "vol_24", "vol_25", "vol_26", "vol_27"]}
+    condition: {min_hours: 16, max_hours: 16}
+
+  - type: "aggregate_hours"
+    description: "SOFT: Avoid giving ANYONE exactly 12 hours (the bare minimum)"
+    enforcement: "PREFER_NOT"
+    weight: 5
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {min_hours: 12, max_hours: 12}
+
+  - type: "shift_span"
+    description: "SOFT: Squeeze everyone's shifts into a 3-day footprint"
+    enforcement: "PREFER_NOT"
+    weight: 1
+    subject: {volunteer_ids: ["ANY"]}
+    condition: {max_span_hours: 72}
+ 
